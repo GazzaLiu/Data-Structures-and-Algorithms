@@ -1,0 +1,2 @@
+http://codemacro.com/2012/09/04/bit-operation-in-c-slash-c-plus-plus/
+http://acm.nudt.edu.cn/~twcourse/BitwiseOperation.html

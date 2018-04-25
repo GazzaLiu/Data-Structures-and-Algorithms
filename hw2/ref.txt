@@ -1,0 +1,6 @@
+http://www.cplusplus.com/reference/algorithm/lower_bound/
+http://www.cplusplus.com/reference/algorithm/upper_bound/
+https://openhome.cc/Gossip/CGossip/StructABC.html
+https://www.byvoid.com/zht/blog/cpp-string
+http://larry850806.github.io/2016/06/06/STL2/
+http://mropengate.blogspot.tw/2018/01/makefile.html
