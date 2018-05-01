@@ -1,0 +1,12 @@
+g++ ./Q1.cpp -o ./Q1.out
+./Q1.out <./Q1in/p01_input01.txt >./Q1out/my01.txt
+diff ./Q1out/p01_output01.txt ./Q1out/my01.txt
+
+g++ ./Q2.cpp -o ./Q2.out
+./Q2.out <./Q2in/p02_input01.txt >./Q2out/my01.txt
+diff ./Q2out/p02_output01.txt ./Q2out/my01.txt
+
+g++ ./Q3.cpp -o ./Q3.out
+./Q3.out <./Q3in/p03_input01.txt
+
+g++ ./Q4.cpp -o ./Q4.out
