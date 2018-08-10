@@ -1,0 +1,211 @@
+
+<!-- saved from url=(0090)http://mirlab.org/jang/courses/dsa/homework/2016/hw01/?count=1&dueDate=20160313%2023:59:59 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=Big5"><script>
+function editfile() {
+        var keycode = event.keyCode;
+        if (keycode==120) {
+                document.location="editfile.asp?FileName=/jang/courses/dsa/homework/2016/hw01/index.asp"
+        }
+}
+</script>
+<script>document.onkeydown=editfile;</script>
+
+<script src="./DSA Homework 1_files/utility4webClient.js.下載"></script>
+
+<!-- For using MathJax?? -->
+<script type="text/x-mathjax-config;executed=true">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+<script src="./DSA Homework 1_files/MathJax.js.下載" id=""></script>
+
+
+
+	<title>DSA Homework 1</title>
+	
+	<style>
+		td {font-family: "標楷體", "helvetica,arial", "Tahoma"}
+		A:link {text-decoration: none}
+		A:hover {text-decoration: underline}
+	</style>
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body background="./DSA Homework 1_files/yellow.gif"><div id="MathJax_Message" style="display: none;"></div>
+<!--font face="標楷體"-->
+
+<center>
+<h2><a href="http://mirlab.org/jang/courses/dsa">DSA</a> Homework 1</h2>
+<h3><a href="http://mirlab.org/jang">Roger Jang</a></h3>
+</center>
+
+<hr>
+<strong>Due date: <font color="red">20160313 23:59:59</font></strong>
+<hr>
+
+<!--
+<font color=red>This homework is not finalized yet!</font>
+-->
+
+<h3 align="center">Inverse of a square matrix</h3>
+
+<h4><img src="./DSA Homework 1_files/redball.gif">Problem definition</h4>
+<p>One way to find the inverse of a square matirx is by Gauss-Jordan elimination.
+In order to finish this homework, you need to read the description under the subtitle of "Finding the inverse of a matrix" at the <a href="https://en.wikipedia.org/wiki/Gaussian_elimination">Wikipedia for Gaussian elimiation</a>. You can also check out the following videos to grasp the idea quickly:
+</p><ul>
+<li><a target="_blank" href="https://www.youtube.com/watch?v=cJg2AuSFdjw">Inverse Matrix Using Gauss-Jordan / Row Reduction , Example 1</a>
+</li><li><a target="_blank" href="https://www.youtube.com/watch?v=rnyLW2-lL7o">Inverse Matrix Using Gauss-Jordan / Row Reduction , Example 2</a>
+</li></ul>
+
+<p>Write a program to calculate the inverse of a given matrix A. (We shall denote the inverse as B.)
+The input format is shown next:
+</p><p>
+</p><xmp>
+n ← The number of rows (also the number of columns) of A
+a11 a12 . . . . . . a1n ← the n numbers of row 1 of A
+a21 a22 . . . . . . a2n ← the n numbers of row 2 of A
+.
+.
+.
+an1 an2 . . . . . . ann ← the n numbers of row n of A
+</xmp>
+	The output format is shown next:
+<xmp>
+error ← the error of A*B
+b11 b12 . . . . . . b1n ← the n numbers of row 1 of B
+b21 b22 . . . . . . b2n ← the n numbers of row 2 of B
+.
+.
+.
+bn1 bn2 . . . . . . bnn ← the n numbers of row n of B
+</xmp>
+<p>The output format is the error (defined later) followed by the inverse matrix. See the test cases for the output examples.
+
+</p><h4><img src="./DSA Homework 1_files/redball.gif">Requirements &amp; suggestions</h4>
+<ol type="a">
+<li>To keep high precision, use the data type "double" to store each element.
+	All intermediate variables should be declared as "double" too.
+</li><li>You can safely assume 0 &lt; n &lt; 201.
+</li><li>You can safely assume the inverse matrix always exists. (So no exception handling for singular matrices is necessary.)
+</li><li>Your program should take the input from the standard input and send the output to the standard output. Therefore you can redirect input and output files if necessary, such as "myProgram &lt; input.txt &gt; output.txt".
+</li><li>The error in the output file is only for your own verification. Our judge system will compute the error based on the product of the original matrix and the computed inverse. The computed inverse is considered correct if the error is less than an error threshold of 1e-2. The error is defined as the maximum element of the absolute value of A*B-I, where I is an identity matrix of size n-by-n. (Check out the output of the test cases shown below.)
+</li><li>Please make sure your output should have at least 6 digits below the decimal point to keep precision. (When you print out your error, usually it is less than 1e-5. Our error tolerance is much higher since we need to read the inverse from your output file, which introduces extra error due to the difference between the internal double data type and its printed version.)
+</li><li>TAs will use 10 test cases (including the following ones) to test the accuracy of your program. 
+</li></ol>
+
+<h4><img src="./DSA Homework 1_files/redball.gif">Test cases</h4>
+<ol type="a">
+<li>n=3:	<a href="http://mirlab.org/jang/courses/dsa/homework/2016/hw01/input_003.txt">input</a>, <a href="http://mirlab.org/jang/courses/dsa/homework/2016/hw01/output_003.txt">output</a>
+</li><li>n=10:	<a href="http://mirlab.org/jang/courses/dsa/homework/2016/hw01/input_010.txt">input</a>, <a href="http://mirlab.org/jang/courses/dsa/homework/2016/hw01/output_010.txt">output</a>
+</li><li>n=20:	<a href="http://mirlab.org/jang/courses/dsa/homework/2016/hw01/input_020.txt">input</a>, <a href="http://mirlab.org/jang/courses/dsa/homework/2016/hw01/output_020.txt">output</a>
+</li><li>n=121:	<a href="http://mirlab.org/jang/courses/dsa/homework/2016/hw01/input_121.txt">input</a>, <a href="http://mirlab.org/jang/courses/dsa/homework/2016/hw01/output_121.txt">output</a>
+</li><li>n=200:	<a href="http://mirlab.org/jang/courses/dsa/homework/2016/hw01/input_200.txt">input</a>, <a href="http://mirlab.org/jang/courses/dsa/homework/2016/hw01/output_200.txt">output</a>
+</li></ol>
+
+<h4><img src="./DSA Homework 1_files/redball.gif">How I determined the error threshold</h4>
+<p>Just for your information, I've run <a href="http://mirlab.org/jang/courses/dsa/homework/2016/hw01/goTest.m">my program</a> to generate the following plots in order to determine the error threshold. The first plot shows the maximum error of 100 test cases for each of the matrix dimensions of 1x1, 2x2, ..., 200x200. Element of the matrices are drawn from a normal distribution with zero mean and unit variance. From the plot, it seems that 1e-5 is a pretty lenient threshold which is not likely to produce false rejection.
+<script>showImage("errorVsDimension.png")</script></p><p align="center"><a target="_blank" href="./DSA Homework 1_files/errorVsDimension.png"><img width="500" border="1" src="./DSA Homework 1_files/errorVsDimension.png"></a></p>
+<p>The following plot shows the errors vs normalized determinants for all 20000 test cases. (So there are actually 20000 dots on the plot!) In other words, the error becomes larger when the determinant is close to zero. This is a reasonable result since the inverse of a matrix is equal to its adjoint matrix divided by its determinant.
+<script>showImage("errorVsDeterminant.png")</script></p><p align="center"><a target="_blank" href="./DSA Homework 1_files/errorVsDeterminant.png"><img width="500" border="1" src="./DSA Homework 1_files/errorVsDeterminant.png"></a></p>
+
+<hr>
+
+<script language="JavaScript">
+document.write("Last updated on " + document.lastModified + ".")
+</script>Last updated on 08/10/2018 09:28:40.
+
+<a href="http://mirlab.org/jang/sandbox/asp/lib/editfile.asp?FileName=/jang/courses/dsa/homework/2016/hw01/index.asp"><img align="right" border="0" src="./DSA Homework 1_files/invisible.gif"></a>
+
+
+</body></html>

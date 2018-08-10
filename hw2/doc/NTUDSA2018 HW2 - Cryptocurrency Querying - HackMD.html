@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://hackmd.io/s/Sk5hK3gqz -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    
+    <meta name="description" content="# NTUDSA2018 HW2 - Cryptocurrency Querying &gt; This is a temporary version of the homework, Some weigh">
+    
+    <title>NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD</title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+	<link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+    
+<script async="" src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/analytics.js.下載"></script><script async="" src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/gtm.js.下載"></script><script>
+window.domain = 'hackmd.io'
+window.urlpath = ''
+window.debug = false
+window.version = '1.0.8'
+
+window.GOOGLE_API_KEY = 'AIzaSyCjSrqWHhmWJnoI7JlD88XDSaBgiKbaenA'
+window.GOOGLE_CLIENT_ID = '911617723593-drikdibvvn63slfd6kbqigo8ql1no55s.apps.googleusercontent.com'
+window.DROPBOX_APP_KEY = 'rdoizrlnkuha23r'
+window.IMGUR_CLIENT_ID = '300fb03bd363e5e'
+</script>
+
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KLW9Z3');</script>
+<!-- End Google Tag Manager -->
+    <meta property="fb:app_id" content="1436904003272070">
+
+<meta name="twitter:image:src" content="https://i.imgur.com/5eDor2R.jpg">
+
+<meta name="twitter:site" content="@hackmd">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD">
+
+<meta name="twitter:description" content="# NTUDSA2018 HW2 - Cryptocurrency Querying &gt; This is a temporary version of the homework, Some weigh">
+
+
+<meta property="og:image" content="https://i.imgur.com/5eDor2R.jpg">
+
+<meta property="og:site_name" content="HackMD">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD">
+
+<meta property="og:description" content="# NTUDSA2018 HW2 - Cryptocurrency Querying &gt; This is a temporary version of the homework, Some weigh">
+
+	
+    <link rel="stylesheet" href="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous">
+    
+<link href="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/font.a1b8087413059f45f22de33f3fbea66b.css" rel="stylesheet">
+
+<link href="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/pretty-common.863caf87650d967d28bead332b605908.css" rel="stylesheet">
+
+<link href="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/pretty.f680655767c0633dfde5b9eaae405741.css" rel="stylesheet">
+
+
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+<![endif]-->
+<style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css" id="parrottalks-notetaker-style">      html > body.evernote_clearly__before_visible #parrottalks-notetaker > iframe,      html > body.clearlyBeforeVisible #parrottalks-notetaker > iframe:not(#evernoteGlobalTools):not(#evernoteOptionsPage):not(#evernoteClearlyArticle) {        visibility: visible !important;      }      .evernote_clearly__before_visible #evernote_clearly__reformat,      .clearlyBeforeVisible #evernoteClearlyArticle {        z-index: 2147483646 !important;      }    </style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body style=""><div id="MathJax_Message" style="display: none;"></div>
+    <div class="ui-infobar container-fluid unselectable hidden-print">
+        <small>
+            <span>
+                
+                    <span class="ui-lastchangeuser"> <i class="ui-user-icon small" style="background-image: url(https://i.imgur.com/5eDor2R.jpg);" data-toggle="tooltip" data-placement="right" title="" data-original-title="Charlie Shih"></i></span>
+                
+                &nbsp;<span class="text-uppercase ui-status-lastchange">changed</span>
+                <span class="ui-lastchange text-uppercase" data-createtime="Thu Mar 22 2018 05:05:53 GMT+0000 (UTC)" data-updatetime="Sun Apr 01 2018 07:30:37 GMT+0000 (UTC)" title="Sun, Apr 1, 2018 3:30 PM">2 days ago</span>
+            </span>
+            <span class="pull-right">922 views <a href="https://hackmd.io/s/Sk5hK3gqz/edit?both" class="ui-edit" title="Edit this note"><i class="fa fa-fw fa-pencil"></i></a></span>
+            <br>
+            
+        </small>
+    </div>
+    <div id="doc" class="container markdown-body"><h1 class="" id="NTUDSA2018-HW2---Cryptocurrency-Querying"><a class="anchor hidden-xs" href="https://hackmd.io/s/Sk5hK3gqz#NTUDSA2018-HW2---Cryptocurrency-Querying" title="NTUDSA2018-HW2---Cryptocurrency-Querying" smoothhashscroll=""><span class="octicon octicon-link"></span></a>NTUDSA2018 HW2 - Cryptocurrency Querying</h1>
+<blockquote class="">
+<p>This is a temporary version of the homework, Some weight of words will differ from the course webpage, but the meanings will all be the same.</p>
+</blockquote>
+<h2 class="" id="Problem-definition"><a class="anchor hidden-xs" href="https://hackmd.io/s/Sk5hK3gqz#Problem-definition" title="Problem-definition" smoothhashscroll=""><span class="octicon octicon-link"></span></a>Problem definition</h2>
+<p>Cryptocurrency is in a big appreciation these year. So John Ceena, an oil tycoon wants to dive into the cryptocurrency market. However, the currencys, exchanges, and so many things make John really confused. As a result, he wants to hire you helping him to sort out the large data, and find out the best currency, exchange to put his enormous asset in.</p>
+<p>Your job: Sort the data with multiple keys, and support each task list below.</p>
+<h3 class="" id="Data-format-will-be"><a class="anchor hidden-xs" href="https://hackmd.io/s/Sk5hK3gqz#Data-format-will-be" title="Data-format-will-be" smoothhashscroll=""><span class="octicon octicon-link"></span></a>Data format will be:</h3>
+<pre><code>Date, currency, exchange, low, high, daily caps
+
+Date: in the format "yyyymmdd"
+currency: Name of the cryptocurrency (string length &lt; 100)
+exchange: Name of the exchange (string length &lt; 100)
+Low/High: Lowest/Highest of the currency on that day (with data type of float)
+cap: value of transactions (with data type of long long int)
+
+Each column will seperate with tabs ('\t'), 
+each data will seperate with newline ('\n').
+</code></pre>
+<hr>
+<h3 class="" id="Your-program-should-support"><a class="anchor hidden-xs" href="https://hackmd.io/s/Sk5hK3gqz#Your-program-should-support" title="Your-program-should-support" smoothhashscroll=""><span class="octicon octicon-link"></span></a>Your program should support:</h3>
+<p>Get the testing data path from argv[1], get the commands from Stdin.<br>
+TAs will execute your program like:</p>
+<pre><code>./a.out [data_path] &lt;[test_case] &gt;[output_file]
+</code></pre>
+<p>Each components in a command are separate with tab’\t’,<br>
+commands will separate with newline’\n’.</p>
+<ol>
+<li class="">query</li>
+</ol>
+<blockquote class="">
+<p>Find the data corresponds to the input</p>
+</blockquote>
+<pre><code>            ____- &gt;This is a tab
+input: query    [date]    [currency]    [exchange]
+output: [low] [high] [cap]
+             _ -&gt;This is a space
+(low/high accurate to 4th decimal places)
+</code></pre>
+<ol start="2">
+<li class="">daily maximum/minimum</li>
+</ol>
+<blockquote class="">
+<p>Find the maximum/minimum of the currency on the given day.<br>
+Find the maximum based on high, minimum based on low of all the exchanges.</p>
+</blockquote>
+<pre><code>input:  price    [min/max]    [date]    [currency]
+output: [min/max of the currency on that date]
+(accurate to 4th decimal places)
+</code></pre>
+<ol start="3">
+<li class="">cap</li>
+</ol>
+<blockquote class="">
+<p>Find the exchange’s total capital of every currencys on the given date</p>
+</blockquote>
+<pre><code>input: cap    [date]    [exchange]
+output: [total cap]
+</code></pre>
+<ol start="4">
+<li class="">end of commanding</li>
+</ol>
+<pre><code>input: end
+Exit the program
+</code></pre>
+<h4 class="" id="Note"><a class="anchor hidden-xs" href="https://hackmd.io/s/Sk5hK3gqz#Note" title="Note" smoothhashscroll=""><span class="octicon octicon-link"></span></a>Note:</h4>
+<p>You can safely assume that the command format will always be correct. However, there might exist some date/currency/exchange that is not found in our database, which you should output <strong>“none”</strong> in these case.</p>
+<hr>
+<h2 class="" id="Data"><a class="anchor hidden-xs" href="https://hackmd.io/s/Sk5hK3gqz#Data" title="Data" smoothhashscroll=""><span class="octicon octicon-link"></span></a>Data:</h2>
+<p>We provide some public data for you to test out your program, and maintain some private data on judge.</p>
+<h3 class="" id="Public-Data"><a class="anchor hidden-xs" href="https://hackmd.io/s/Sk5hK3gqz#Public-Data" title="Public-Data" smoothhashscroll=""><span class="octicon octicon-link"></span></a>Public Data</h3>
+<p>You can access the data on workstation’s /tmp2<br>
+-&gt; Path: /tmp2/DSA2018Spring/hw2<br>
+Or you can download them  directly from <strong><a href="https://www.csie.ntu.edu.tw/~cyshih/dsa_hw2/" target="_blank">here</a></strong></p>
+<pre><code>Dir Tree:
+    Public_data.txt    -&gt;Test_data
+    
+    1.in: Test case for "query"
+    2.in: Test case for "price"
+    3.in: Test case for "cap"
+    4.in: Mixed
+    
+    *.out: outputs
+</code></pre>
+<hr>
+<h2 class="" id="Sample-case"><a class="anchor hidden-xs" href="https://hackmd.io/s/Sk5hK3gqz#Sample-case" title="Sample-case" smoothhashscroll=""><span class="octicon octicon-link"></span></a>Sample case:</h2>
+<pre><code>Input: query    20130114    Diamond    Tidex
+Output: 2.9440    4.6044    24
+</code></pre>
+<pre><code>Input: price    min    20130114    Diamond
+Output: 4.6257
+</code></pre>
+<pre><code>Input: cap    20130114    Tidex
+Output: 210671
+</code></pre>
+<pre><code>Input: query    20120114    Roger    Jang
+Output: none
+</code></pre>
+<h4 class="" id="Boundaries"><a class="anchor hidden-xs" href="https://hackmd.io/s/Sk5hK3gqz#Boundaries" title="Boundaries" smoothhashscroll=""><span class="octicon octicon-link"></span></a>Boundaries</h4>
+<pre><code>Except that cap should store with long, all data will fit in integer/float.
+</code></pre>
+<hr>
+<h2 class="" id="Suggestion"><a class="anchor hidden-xs" href="https://hackmd.io/s/Sk5hK3gqz#Suggestion" title="Suggestion" smoothhashscroll=""><span class="octicon octicon-link"></span></a>Suggestion</h2>
+<ol>
+<li class="">You may create more than one sorting table to support all the commands.</li>
+<li class="">Binary search should be your weapon to deal with the time barrier.</li>
+<li class="">The homework is focusing on multiple keys sorting and binary search. However, other methods with faster speed are welcome.</li>
+<li class="">You can safely assume that the command format will always be correct. However, there might exist some date/currency/exchange that is not found in our database, which you should output “none” in these case.</li>
+</ol>
+<h2 class="" id="Requirements"><a class="anchor hidden-xs" href="https://hackmd.io/s/Sk5hK3gqz#Requirements" title="Requirements" smoothhashscroll=""><span class="octicon octicon-link"></span></a>Requirements</h2>
+<p>Time, Memory limit on judge.<br>
+FYI, TA’s program(fgets, std:sort, binary search, without optimization) spend mostly 11s, max 12s on linux8. 10s on my PC, 15s on my laptop.</p>
+<h2 class="" id="演習課參與表單"><a class="anchor hidden-xs" href="https://hackmd.io/s/Sk5hK3gqz#%E6%BC%94%E7%BF%92%E8%AA%B2%E5%8F%83%E8%88%87%E8%A1%A8%E5%96%AE" title="演習課參與表單" smoothhashscroll=""><span class="octicon octicon-link"></span></a>演習課參與表單</h2>
+<p>演習課將在德田R101舉行3/30 17:20開始</p>
+<iframe src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/viewform.html" width="760" height="700">載入中…</iframe></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display: none; right: 395.4px;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="https://hackmd.io/s/Sk5hK3gqz#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel"><div class="toc"><ul class="nav"><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#NTUDSA2018-HW2---Cryptocurrency-Querying" smoothhashscroll="">NTUDSA2018 HW2 - Cryptocurrency Querying</a><ul class="nav"><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#Problem-definition" smoothhashscroll="">Problem definition</a><ul class="nav"><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#Data-format-will-be" smoothhashscroll="">Data format will be:</a></li><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#Your-program-should-support" smoothhashscroll="">Your program should support:</a></li></ul></li><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#Data" smoothhashscroll="">Data:</a><ul class="nav"><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#Public-Data" smoothhashscroll="">Public Data</a></li></ul></li><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#Sample-case" smoothhashscroll="">Sample case:</a></li><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#Suggestion" smoothhashscroll="">Suggestion</a></li><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#Requirements" smoothhashscroll="">Requirements</a></li><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#%E6%BC%94%E7%BF%92%E8%AA%B2%E5%8F%83%E8%88%87%E8%A1%A8%E5%96%AE" smoothhashscroll="">演習課參與表單</a></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="https://hackmd.io/s/Sk5hK3gqz#">Expand all</a><a class="back-to-top" href="https://hackmd.io/s/Sk5hK3gqz#">Back to top</a><a class="go-to-bottom" href="https://hackmd.io/s/Sk5hK3gqz#">Go to bottom</a></div></ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print affix" data-spy="affix" style="left: 1128.6px;"><div class="toc"><ul class="nav"><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#NTUDSA2018-HW2---Cryptocurrency-Querying" smoothhashscroll="">NTUDSA2018 HW2 - Cryptocurrency Querying</a><ul class="nav"><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#Problem-definition" smoothhashscroll="">Problem definition</a><ul class="nav"><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#Data-format-will-be" smoothhashscroll="">Data format will be:</a></li><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#Your-program-should-support" smoothhashscroll="">Your program should support:</a></li></ul></li><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#Data" smoothhashscroll="">Data:</a><ul class="nav"><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#Public-Data" smoothhashscroll="">Public Data</a></li></ul></li><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#Sample-case" smoothhashscroll="">Sample case:</a></li><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#Suggestion" smoothhashscroll="">Suggestion</a></li><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#Requirements" smoothhashscroll="">Requirements</a></li><li class=""><a href="https://hackmd.io/s/Sk5hK3gqz#%E6%BC%94%E7%BF%92%E8%AA%B2%E5%8F%83%E8%88%87%E8%A1%A8%E5%96%AE" smoothhashscroll="">演習課參與表單</a></li></ul></li></ul></div><div class="toc-menu"><a class="expand-toggle" href="https://hackmd.io/s/Sk5hK3gqz#">Expand all</a><a class="back-to-top" href="https://hackmd.io/s/Sk5hK3gqz#">Back to top</a><a class="go-to-bottom" href="https://hackmd.io/s/Sk5hK3gqz#">Go to bottom</a></div></div>
+    
+
+
+
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/ga.js.下載" async="" defer=""></script>
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/raven.min.js.下載" crossorigin="anonymous"></script>
+<script>Raven.config('https://b1ed86878f414ccc832dc0f63ffe2daa@sentry.io/121416').install();</script>
+<!-- Google Tag Manager (noscript) -->
+<noscript>&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLW9Z3"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script type="text/x-mathjax-config;executed=true">
+    MathJax.Hub.Config({ messageStyle: "none", skipStartupTypeset: true ,tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true }});
+</script>
+
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/jquery.min.js.下載" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/velocity.min.js.下載" integrity="sha256-bhm0lgEt6ITaZCDzZpkr/VXVrLa5RP4u9v2AYsbzSUk=" crossorigin="anonymous" defer=""></script>
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/bootstrap.min.js.下載" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer=""></script>
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/jquery.mousewheel.min.js.下載" integrity="sha256-jnOjDTXIPqall8M0MyTSt98JetJuZ7Yu+1Jm7hLTF7U=" crossorigin="anonymous" defer=""></script>
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/js-yaml.min.js.下載" integrity="sha256-8PanqYAVOGlOct+i65R+HqibK3KPsXINnrSfxN+Y/J0=" crossorigin="anonymous" defer=""></script>
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/MathJax.js.下載" integrity="sha256-yYfngbEKv4RENfGDvNUqJTqGFcKf31NJEe9OTnnMH3Y=" crossorigin="anonymous" defer=""></script>
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/TeX-AMS-MML_HTMLorMML.js.下載" integrity="sha256-immzXfCGLhnx3Zfi9F/dUcqxEM8K3o3oTFy9Bh6HCwg=" crossorigin="anonymous" defer=""></script>
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/moment-with-locales.min.js.下載" integrity="sha256-vvT7Ok9u6GbfnBPXnbM6FVDEO8E1kTdgHOFZOAXrktA=" crossorigin="anonymous" defer=""></script>
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/mermaid.min.js.下載" integrity="sha256-tJ52z0aAzZBamAZPedNylrtijTuTMLBabhv/A6eTA1w=" crossorigin="anonymous" defer=""></script>
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/emojify.min.js.下載" integrity="sha256-VAB5tAlKBvgaxw8oJ1crWMVbdmBVl4mP/2M8MNRl+4E=" crossorigin="anonymous" defer=""></script>
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/handlebars.min.js.下載" integrity="sha256-1O3BtOwnPyyRzOszK6P+gqaRoXHV6JXj8HkjZmPYhCI=" crossorigin="anonymous" defer=""></script>
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/highlight.min.js.下載" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous" defer=""></script>
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/gist-embed.min.js.下載" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer=""></script>
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/viz-lite.js.下載" integrity="sha256-lLBbzF3IYSscIpBw/KgKjF1dDWMQdz1RWZnEdnNSDxA=" crossorigin="anonymous" defer=""></script>
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/abcjs_basic-min.js.下載" integrity="sha256-Sq1r2XXWXQoShQKsS0Wrf5r7fRkErd9Fat9vHYeU68s=" crossorigin="anonymous" defer=""></script>
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/flowchart.min.js.下載" integrity="sha256-43MQ88ScIDEvoYOq16yL+qkmb4x5tQF/OD06Uq5NqOw=" crossorigin="anonymous" defer=""></script>
+
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/manifest.2f0e66ab8923c592da17.js.下載" defer=""></script>
+
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/font.4701f6f7e2140390c941.js.下載" defer=""></script>
+
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/pretty-common.14cbb1935a02555c32e6.js.下載" defer=""></script>
+
+<script src="./NTUDSA2018 HW2 - Cryptocurrency Querying - HackMD_files/pretty.e5d9197211f7133143de.js.下載" defer=""></script>
+
+
+
+
+</body></html>
